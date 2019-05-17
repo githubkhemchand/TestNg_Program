@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="2" total="3" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52" started-at="2019-05-16T13:29:54Z" finished-at="2019-05-16T13:29:54Z">
+  <suite name="Default suite" duration-ms="43" started-at="2019-05-17T09:55:38Z" finished-at="2019-05-17T09:55:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52" started-at="2019-05-16T13:29:54Z" finished-at="2019-05-16T13:29:54Z">
-      <class name="concept.Enable_Desable">
-        <test-method status="PASS" signature="A()[pri:1, instance:concept.Enable_Desable@1da2cb77]" name="A" duration-ms="10" started-at="2019-05-16T13:29:54Z" finished-at="2019-05-16T13:29:54Z">
+    <test name="Default test" duration-ms="43" started-at="2019-05-17T09:55:38Z" finished-at="2019-05-17T09:55:38Z">
+      <class name="concept.DependsOnMethod">
+        <test-method status="PASS" signature="ClickOn_Login_Link()[pri:1, instance:concept.DependsOnMethod@5dfcfece]" name="ClickOn_Login_Link" duration-ms="10" started-at="2019-05-17T09:55:38Z" finished-at="2019-05-17T09:55:38Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- A -->
-      </class> <!-- concept.Enable_Desable -->
+        </test-method> <!-- ClickOn_Login_Link -->
+        <test-method status="PASS" signature="Login()[pri:2, instance:concept.DependsOnMethod@5dfcfece]" name="Login" duration-ms="1" started-at="2019-05-17T09:55:38Z" depends-on-methods="concept.DependsOnMethod.ClickOn_Login_Link" finished-at="2019-05-17T09:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method status="PASS" signature="Dashbord()[pri:0, instance:concept.DependsOnMethod@5dfcfece]" name="Dashbord" duration-ms="1" started-at="2019-05-17T09:55:38Z" depends-on-methods="concept.DependsOnMethod.Login" finished-at="2019-05-17T09:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Dashbord -->
+      </class> <!-- concept.DependsOnMethod -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
