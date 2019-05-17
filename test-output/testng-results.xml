@@ -1,25 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="43" started-at="2019-05-17T09:55:38Z" finished-at="2019-05-17T09:55:38Z">
+  <suite name="Default suite" duration-ms="31980" started-at="2019-05-17T12:06:22Z" finished-at="2019-05-17T12:06:54Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="43" started-at="2019-05-17T09:55:38Z" finished-at="2019-05-17T09:55:38Z">
-      <class name="concept.DependsOnMethod">
-        <test-method status="PASS" signature="ClickOn_Login_Link()[pri:1, instance:concept.DependsOnMethod@5dfcfece]" name="ClickOn_Login_Link" duration-ms="10" started-at="2019-05-17T09:55:38Z" finished-at="2019-05-17T09:55:38Z">
+    <test name="Default test" duration-ms="31980" started-at="2019-05-17T12:06:22Z" finished-at="2019-05-17T12:06:54Z">
+      <class name="concept.BeforeMethodANDAfterMethod">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:concept.BeforeMethodANDAfterMethod@5419f379]" name="launchBrowser" is-config="true" duration-ms="3328" started-at="2019-05-17T12:06:22Z" finished-at="2019-05-17T12:06:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickOn_Login_Link -->
-        <test-method status="PASS" signature="Login()[pri:2, instance:concept.DependsOnMethod@5dfcfece]" name="Login" duration-ms="1" started-at="2019-05-17T09:55:38Z" depends-on-methods="concept.DependsOnMethod.ClickOn_Login_Link" finished-at="2019-05-17T09:55:38Z">
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifyPageTitle1()[pri:0, instance:concept.BeforeMethodANDAfterMethod@5419f379]" name="verifyPageTitle1" duration-ms="3105" started-at="2019-05-17T12:06:26Z" finished-at="2019-05-17T12:06:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login -->
-        <test-method status="PASS" signature="Dashbord()[pri:0, instance:concept.DependsOnMethod@5dfcfece]" name="Dashbord" duration-ms="1" started-at="2019-05-17T09:55:38Z" depends-on-methods="concept.DependsOnMethod.Login" finished-at="2019-05-17T09:55:38Z">
+        </test-method> <!-- verifyPageTitle1 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:concept.BeforeMethodANDAfterMethod@5419f379]" name="closeBrowser" is-config="true" duration-ms="2439" started-at="2019-05-17T12:06:29Z" finished-at="2019-05-17T12:06:31Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Dashbord -->
-      </class> <!-- concept.DependsOnMethod -->
+        </test-method> <!-- closeBrowser -->
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:concept.BeforeMethodANDAfterMethod@5419f379]" name="launchBrowser" is-config="true" duration-ms="2519" started-at="2019-05-17T12:06:31Z" finished-at="2019-05-17T12:06:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="verifyPageTitle2()[pri:0, instance:concept.BeforeMethodANDAfterMethod@5419f379]" name="verifyPageTitle2" duration-ms="18471" started-at="2019-05-17T12:06:34Z" finished-at="2019-05-17T12:06:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPageTitle2 -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:concept.BeforeMethodANDAfterMethod@5419f379]" name="closeBrowser" is-config="true" duration-ms="2076" started-at="2019-05-17T12:06:52Z" finished-at="2019-05-17T12:06:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- concept.BeforeMethodANDAfterMethod -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
