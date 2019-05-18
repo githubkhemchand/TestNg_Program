@@ -1,10 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Ecommerce">
-  <test name="SanityTests">
-    <classes>
-      <class name="concept.BeforeClassAndAfterClass"/>
-      <class name="concept.BeforeClassAndAfterClass2"/>
-    </classes>
-  </test> 
+	  <!-- <test name="SanityTests">
+	    <classes>
+	      <class name="concept.BeforeClassAndAfterClass"/>
+	      <class name="concept.BeforeClassAndAfterClass2"/>
+	    </classes>
+	  </test>  -->
+	  
+	  <test name="Grouping_Test_cases"> 
+	  <groups>
+	     <run>
+	        <include name="sanity"></include>
+	     </run>
+	  </groups>
+	     <classes>
+	         <class name="concept.Grouping_Test_Cases" ></class>
+	     </classes>	  	  
+	  </test>
+	  
+	  
 </suite> 
