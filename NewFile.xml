@@ -31,11 +31,21 @@
 	  <!--  Thread - A Thread is a concurrent unit of execution. -->
 	   
 	   
-		<suite name="parallel_test_exe_method" parallel="methods" thread-count="2">
+		<!-- <suite name="parallel_test_exe_method" parallel="methods" thread-count="2">
 		   <test name= "Test_cases">
 		      <classes>
 		        <class name="concept.Parallel_test_exe_method"></class> 
 		      </classes>
 		   </test>
+	   </suite> -->
+	   
+	   
+	   <suite name="parllel_test_exe_class" parallel="classes" thread-count="2">
+	     <test name="parallel_test_exe">
+	       <classes>
+	          <class name="concept.Parallel_test_exe_classes"></class>
+	          <class name="concept.Parallel_test_exe_classes2"></class>
+	       </classes>
+	     </test>
 	   </suite>
 

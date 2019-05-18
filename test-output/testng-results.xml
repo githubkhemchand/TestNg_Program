@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="37" started-at="2019-05-18T09:12:12Z" finished-at="2019-05-18T09:12:13Z">
+  <suite name="parllel_test_exe_class" duration-ms="76" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="37" started-at="2019-05-18T09:12:12Z" finished-at="2019-05-18T09:12:13Z">
-      <class name="concept.Parallel_test_exe_method">
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:concept.Parallel_test_exe_method@5dfcfece]" name="testCase1" duration-ms="10" started-at="2019-05-18T09:12:13Z" finished-at="2019-05-18T09:12:13Z">
+    <test name="parallel_test_exe" duration-ms="76" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
+      <class name="concept.Parallel_test_exe_classes2">
+        <test-method status="PASS" signature="testCase4()[pri:0, instance:concept.Parallel_test_exe_classes2@5d5eef3d]" name="testCase4" duration-ms="35" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase4 -->
+        <test-method status="PASS" signature="testCase5()[pri:0, instance:concept.Parallel_test_exe_classes2@5d5eef3d]" name="testCase5" duration-ms="2" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCase5 -->
+      </class> <!-- concept.Parallel_test_exe_classes2 -->
+      <class name="concept.Parallel_test_exe_classes">
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:concept.Parallel_test_exe_classes@23ceabc1]" name="testCase1" duration-ms="12" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="testCase2()[pri:0, instance:concept.Parallel_test_exe_method@5dfcfece]" name="testCase2" duration-ms="2" started-at="2019-05-18T09:12:13Z" finished-at="2019-05-18T09:12:13Z">
+        <test-method status="PASS" signature="testCase2()[pri:0, instance:concept.Parallel_test_exe_classes@23ceabc1]" name="testCase2" duration-ms="4" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCase2 -->
-      </class> <!-- concept.Parallel_test_exe_method -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- concept.Parallel_test_exe_classes -->
+    </test> <!-- parallel_test_exe -->
+  </suite> <!-- parllel_test_exe_class -->
 </testng-results>
