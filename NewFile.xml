@@ -40,7 +40,7 @@
 	   </suite> -->
 	   
 	   
-	   <suite name="parllel_test_exe_class" parallel="classes" thread-count="2">
+	   <suite name="parllel_test_exe_class"  parallel="classes" thread-count="2">
 	     <test name="parallel_test_exe">
 	       <classes>
 	          <class name="concept.Parallel_test_exe_classes"></class>
