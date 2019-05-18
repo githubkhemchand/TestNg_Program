@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Ecommerce" duration-ms="55" started-at="2019-05-18T07:19:38Z" finished-at="2019-05-18T07:19:38Z">
+  <suite name="Default suite" duration-ms="37" started-at="2019-05-18T09:12:12Z" finished-at="2019-05-18T09:12:13Z">
     <groups>
-      <group name="regression">
-        <method signature="Grouping_Test_Cases.login()[pri:1, instance:concept.Grouping_Test_Cases@2ef5e5e3]" name="login" class="concept.Grouping_Test_Cases"/>
-      </group> <!-- regression -->
-      <group name="sanity">
-        <method signature="Grouping_Test_Cases.fundTransefer()[pri:2, instance:concept.Grouping_Test_Cases@2ef5e5e3]" name="fundTransefer" class="concept.Grouping_Test_Cases"/>
-        <method signature="Grouping_Test_Cases.login()[pri:1, instance:concept.Grouping_Test_Cases@2ef5e5e3]" name="login" class="concept.Grouping_Test_Cases"/>
-        <method signature="Grouping_Test_Cases.search()[pri:3, instance:concept.Grouping_Test_Cases@2ef5e5e3]" name="search" class="concept.Grouping_Test_Cases"/>
-      </group> <!-- sanity -->
     </groups>
-    <test name="Grouping_Test_cases" duration-ms="55" started-at="2019-05-18T07:19:38Z" finished-at="2019-05-18T07:19:38Z">
-      <class name="concept.Grouping_Test_Cases">
-        <test-method status="PASS" signature="login()[pri:1, instance:concept.Grouping_Test_Cases@2ef5e5e3]" name="login" duration-ms="10" started-at="2019-05-18T07:19:38Z" finished-at="2019-05-18T07:19:38Z">
+    <test name="Default test" duration-ms="37" started-at="2019-05-18T09:12:12Z" finished-at="2019-05-18T09:12:13Z">
+      <class name="concept.Parallel_test_exe_method">
+        <test-method status="PASS" signature="testCase1()[pri:0, instance:concept.Parallel_test_exe_method@5dfcfece]" name="testCase1" duration-ms="10" started-at="2019-05-18T09:12:13Z" finished-at="2019-05-18T09:12:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="fundTransefer()[pri:2, instance:concept.Grouping_Test_Cases@2ef5e5e3]" name="fundTransefer" duration-ms="2" started-at="2019-05-18T07:19:38Z" finished-at="2019-05-18T07:19:38Z">
+        </test-method> <!-- testCase1 -->
+        <test-method status="PASS" signature="testCase2()[pri:0, instance:concept.Parallel_test_exe_method@5dfcfece]" name="testCase2" duration-ms="2" started-at="2019-05-18T09:12:13Z" finished-at="2019-05-18T09:12:13Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fundTransefer -->
-        <test-method status="PASS" signature="search()[pri:3, instance:concept.Grouping_Test_Cases@2ef5e5e3]" name="search" duration-ms="1" started-at="2019-05-18T07:19:38Z" finished-at="2019-05-18T07:19:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-      </class> <!-- concept.Grouping_Test_Cases -->
-    </test> <!-- Grouping_Test_cases -->
-  </suite> <!-- Ecommerce -->
+        </test-method> <!-- testCase2 -->
+      </class> <!-- concept.Parallel_test_exe_method -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

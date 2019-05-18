@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Ecommerce">
-	  <!-- <test name="SanityTests">
+
+<!-- <suite name="BeforeClassAndAfterClass">
+	 <test name="SanityTests">
 	    <classes>
 	      <class name="concept.BeforeClassAndAfterClass"/>
 	      <class name="concept.BeforeClassAndAfterClass2"/>
 	    </classes>
-	  </test>  -->
-	  
-	  <test name="Grouping_Test_cases"> 
+	  </test>
+</suite>  -->
+
+<!-- <suite name="Group]">
+	 <test name="Grouping_Test_cases"> 
 	  <groups>
 	     <run>
 	        <include name="sanity"></include>
@@ -18,6 +21,21 @@
 	         <class name="concept.Grouping_Test_Cases" ></class>
 	     </classes>	  	  
 	  </test>
+</suite> -->  
+	   
+	   
+	<!--   The below is the simple testng.xml file, if you observe, we are defining two attributes 'parallel' and 'thread-count' 
+	  at suite level. As we want test methods to be executed in parallel, we have provided 'methods'. And 'thread-count' attribute
+	   is to used to pass the number of maximum threads to be created. -->
 	  
-	  
-</suite> 
+	  <!--  Thread - A Thread is a concurrent unit of execution. -->
+	   
+	   
+		<suite name="parallel_test_exe_method" parallel="methods" thread-count="2">
+		   <test name= "Test_cases">
+		      <classes>
+		        <class name="concept.Parallel_test_exe_method"></class> 
+		      </classes>
+		   </test>
+	   </suite>
+
