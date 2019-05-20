@@ -40,12 +40,24 @@
 	   </suite> -->
 	   
 	   
-	   <suite name="parllel_test_exe_class"  parallel="classes" thread-count="2">
+	  <!--  <suite name="parllel_test_exe_class"  parallel="classes" thread-count="2">
 	     <test name="parallel_test_exe">
 	       <classes>
 	          <class name="concept.Parallel_test_exe_classes"></class>
 	          <class name="concept.Parallel_test_exe_classes2"></class>
 	       </classes>
 	     </test>
-	   </suite>
+	   </suite> -->
+	   
+	  <!--  
+	   <suite name="Parameterizaation using testng.xml">
+	     <parameter name="name" value="mahajankhemchand@gmail.com" />
+		 <parametre name="password" value="facebookpassword@143" />
+	       <test name="parameterization">
+		           <classes>
+		              <class name="concept.Parameterization">
+		              </class>
+		           </classes>
+	       </test>
+	   </suite> -->
 
