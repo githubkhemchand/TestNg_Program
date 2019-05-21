@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="concept.BeforeMethodANDAfterMethod">
+      <class name="concept.Parametreization_Dataprovider">
         <methods>
-          <include name="closeBrowser"/>
-          <include name="verifyPageTitle2"/>
-          <include name="verifyPageTitle1"/>
-          <include name="launchBrowser"/>
+          <include name="setup"/>
+          <include name="testMethodA"/>
+          <include name="testMethodB"/>
         </methods>
-      </class> <!-- concept.BeforeMethodANDAfterMethod -->
+      </class> <!-- concept.Parametreization_Dataprovider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

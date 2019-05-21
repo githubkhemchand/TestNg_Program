@@ -60,4 +60,15 @@
 		           </classes>
 	       </test>
 	   </suite> -->
+	   
+	   
+	   <suite name="dataprovider">
+	     <test name="Datapro">
+	        <classes>
+	         <class name="concept.Parametreization_Dataprovider"></class>
+	        </classes>
+	     </test>
+	   </suite>
+	   
+	   
 

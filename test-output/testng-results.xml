@@ -1,31 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="parllel_test_exe_class" duration-ms="76" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
+  <suite name="Default suite" duration-ms="5360" started-at="2019-05-21T05:35:23Z" finished-at="2019-05-21T05:35:29Z">
     <groups>
+      <group name="A">
+        <method signature="Parametreization_Dataprovider.testMethodA(java.lang.String, java.lang.String)[pri:0, instance:concept.Parametreization_Dataprovider@7dc7cbad]" name="testMethodA" class="concept.Parametreization_Dataprovider"/>
+      </group> <!-- A -->
+      <group name="B">
+        <method signature="Parametreization_Dataprovider.testMethodB(java.lang.String)[pri:0, instance:concept.Parametreization_Dataprovider@7dc7cbad]" name="testMethodB" class="concept.Parametreization_Dataprovider"/>
+      </group> <!-- B -->
     </groups>
-    <test name="parallel_test_exe" duration-ms="76" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
-      <class name="concept.Parallel_test_exe_classes2">
-        <test-method status="PASS" signature="testCase4()[pri:0, instance:concept.Parallel_test_exe_classes2@5d5eef3d]" name="testCase4" duration-ms="35" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
+    <test name="Default test" duration-ms="5360" started-at="2019-05-21T05:35:23Z" finished-at="2019-05-21T05:35:29Z">
+      <class name="concept.Parametreization_Dataprovider">
+        <test-method status="PASS" signature="setup()[pri:0, instance:concept.Parametreization_Dataprovider@7dc7cbad]" name="setup" is-config="true" duration-ms="5332" started-at="2019-05-21T05:35:23Z" finished-at="2019-05-21T05:35:29Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase4 -->
-        <test-method status="PASS" signature="testCase5()[pri:0, instance:concept.Parallel_test_exe_classes2@5d5eef3d]" name="testCase5" duration-ms="2" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="testMethodA(java.lang.String, java.lang.String)[pri:0, instance:concept.Parametreization_Dataprovider@7dc7cbad]" name="testMethodA" duration-ms="0" started-at="2019-05-21T05:35:29Z" data-provider="SearchProvider" finished-at="2019-05-21T05:35:29Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public java.lang.Object[][] concept.Parametreization_Dataprovider.getDataFromDataprovider(org.testng.ITestContext) returned a null value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] concept.Parametreization_Dataprovider.getDataFromDataprovider(org.testng.ITestContext) returned a null value
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase5 -->
-      </class> <!-- concept.Parallel_test_exe_classes2 -->
-      <class name="concept.Parallel_test_exe_classes">
-        <test-method status="PASS" signature="testCase1()[pri:0, instance:concept.Parallel_test_exe_classes@23ceabc1]" name="testCase1" duration-ms="12" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
+        </test-method> <!-- testMethodA -->
+        <test-method status="FAIL" signature="testMethodB(java.lang.String)[pri:0, instance:concept.Parametreization_Dataprovider@7dc7cbad]" name="testMethodB" duration-ms="0" started-at="2019-05-21T05:35:29Z" data-provider="SearchProvider" finished-at="2019-05-21T05:35:29Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Data Provider public java.lang.Object[][] concept.Parametreization_Dataprovider.getDataFromDataprovider(org.testng.ITestContext) returned a null value]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Data Provider public java.lang.Object[][] concept.Parametreization_Dataprovider.getDataFromDataprovider(org.testng.ITestContext) returned a null value
+at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:133)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCase1 -->
-        <test-method status="PASS" signature="testCase2()[pri:0, instance:concept.Parallel_test_exe_classes@23ceabc1]" name="testCase2" duration-ms="4" started-at="2019-05-18T10:06:50Z" finished-at="2019-05-18T10:06:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testCase2 -->
-      </class> <!-- concept.Parallel_test_exe_classes -->
-    </test> <!-- parallel_test_exe -->
-  </suite> <!-- parllel_test_exe_class -->
+        </test-method> <!-- testMethodB -->
+      </class> <!-- concept.Parametreization_Dataprovider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
